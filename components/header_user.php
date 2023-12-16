@@ -31,14 +31,14 @@
                     <a class="nav-link" href="users_home.php">Trang chủ</a>
                 </li>
                 <li><a class="nav-link" href="users_shop.php">Nguyên liệu</a></li>
-                <li><a class="nav-link" href="assets/about.html">Danh mục</a></li>
-                <li><a class="nav-link" href="assets/blog.html">Blog</a></li>
+                <li><a class="nav-link" href="users_">Danh mục</a></li>
+                <li><a class="nav-link" href="users_blog.php">Blog</a></li>
                 <li><a class="nav-link" href="assets/contact.html">Khám phá</a></li>
             </ul>
 
             <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-                <li><a class="nav-link" href="#"><img src="../assets/images/user.svg"></a></li>
-                <li><a class="nav-link" href="users/users_cart.php"><img src="../assets/images/cart.svg"></a></li>
+                <li><a class="nav-link" href="users_profile.php?id=<?=$_SESSION['MaThanhVien']?>"><img src="../assets/images/user.svg"></a></li>
+                <li><a class="nav-link" href="users_cart.php"><img src="../assets/images/cart.svg"></a></li>
             </ul>
 
             <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">

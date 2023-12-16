@@ -23,10 +23,10 @@
 
 		$result = $conn->query($sql) or die("Can't get recordset");
 		var_dump($_GET['MaSanPham']);
-		if(isset($_GET['action'])){
-			var_dump($_POST);
-			exit;
-		}
+		// if(isset($_GET['action'])){
+		// 	var_dump($_POST);
+		// 	exit;
+		// }
 
     ?>
 		<title></title>
