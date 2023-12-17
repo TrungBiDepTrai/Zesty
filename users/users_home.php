@@ -53,7 +53,7 @@
 					<div class="row justify-content-between">
 						<div class="col-lg-5">
 							<div class="intro-excerpt">
-								<h1>Của hàng bán <span clsas="d-block">nguyên liệu nấu ăn</span></h1>
+								<h1>Cửa hàng bán <span clsas="d-block">nguyên liệu nấu ăn</span></h1>
 								<p class="mb-4">Zesty là nền tảng đa dạng cho mọi thứ liên quan tới ẩm thực. Từ việc tìm nguyên liệu chất lượng đỉnh cao đến việc khám phá công thức nấu ăn mới và kết nối với cộng đồng yêu thích ẩm thực, Zesty sẽ là người bạn đồng hành đắc lực của bạn.</p>
 							
 							</div>
