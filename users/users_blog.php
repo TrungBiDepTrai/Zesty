@@ -21,7 +21,7 @@
 						<div class="col-lg-5">
 							<div class="intro-excerpt">
 								<h1>Blog</h1>
-								<p class="mb-4">Nơi tuyệt vời để trổ tài nấu ăn của bạn .</p>
+								<p class="mb-4">Nơi tuyệt vời để trổ tài nấu ăn của bạn.</p>
 								
 							</div>
 						</div>
