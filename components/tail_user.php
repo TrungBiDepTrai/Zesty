@@ -41,7 +41,7 @@
 						<p class="mb-4">Zesty - Người bạn đồng hành tuyệt vời nhất của bạn trong hành trình ngon miệng.</p>
 
 						<ul class="list-unstyled custom-social">
-							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+							<li><a href="https://www.facebook.com/ConstHaki"><span class="fa fa-brands fa-facebook-f"></span></a></li>
 							<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
 							<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
 							<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
@@ -73,7 +73,7 @@
 
 							<div class="col-6 col-sm-6 col-md-3">
 								<ul class="list-unstyled">
-									<li><a href="#">Live chat</a></li>
+									<li><a href="https://www.facebook.com/ConstHaki">Live chat</a></li>
 									<li><a href="#">Thông tin</a></li>
 								</ul>
 							</div>

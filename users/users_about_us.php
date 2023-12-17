@@ -81,7 +81,7 @@
 							</div>
 
 						</div>
-						<p><a herf="#" class="btn">Mua ngay</a></p>
+						
 					</div>
 
 					<div class="col-lg-5">

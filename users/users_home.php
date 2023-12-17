@@ -55,7 +55,7 @@
 							<div class="intro-excerpt">
 								<h1>Của hàng bán <span clsas="d-block">nguyên liệu nấu ăn</span></h1>
 								<p class="mb-4">Zesty là nền tảng đa dạng cho mọi thứ liên quan tới ẩm thực. Từ việc tìm nguyên liệu chất lượng đỉnh cao đến việc khám phá công thức nấu ăn mới và kết nối với cộng đồng yêu thích ẩm thực, Zesty sẽ là người bạn đồng hành đắc lực của bạn.</p>
-								<p><a href="" class="btn btn-secondary me-2">Đặt ngay</a><a href="#" class="btn btn-white-outline">Tìm hiểu thêm</a></p>
+							
 							</div>
 						</div>
 						<div class="col-lg-3">
@@ -75,7 +75,7 @@
 					<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
 						<h2 class="mb-4 section-title">Sản phảm nổi bật.</h2>
 						<p class="mb-4">Nguyên liệu nấu ăn nổi bật của chúng tôi: chất lượng tốt, đa dạng, giúp tạo ra món ăn ngon, làm phong phú và thú vị bữa ăn hàng ngày của bạn. </p>
-						<p><a href="assets/shop.html" class="btn">Khám phá</a></p>
+						<p><a href="../users/user_shop.php" class="btn">Khám phá</a></p>
 					</div> 
 
 					<?php
@@ -91,9 +91,7 @@
 												<strong class="product-price"><?php echo $row["Gia"]?></strong>
 
 												<span class="icon-cross">
-                                                <a href="users_shop.php?action=remove_from_cart&MaGioHang=<?php echo $row['MaGioHang']; ?>&MaThanhVien=<?php echo $_SESSION['MaThanhVien']; ?>&MaSanPham=<?php echo $row['MaSanPham']; ?>">
-                                                    <img src="../assets/images/cross.svg" class="img-fluid">
-                                                </a>
+
                                             </span>
 											</a>
 									</div>
