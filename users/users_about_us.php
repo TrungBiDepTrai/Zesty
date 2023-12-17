@@ -37,7 +37,7 @@
 				<div class="row justify-content-between">
 					<div class="col-lg-6">
 						<h2 class="section-title">Tại sao lại chọn chúng tôi</h2>
-						<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+						<p>Đến với chúng tôi, bạn sẽ trải nghiệm sự thuận tiện khi mua sắm đồ ăn và nguyên liệu. Với sự đa dạng phong phú, chất lượng đảm bảo, và dịch vụ giao hàng nhanh chóng, chúng tôi cam kết mang lại trải nghiệm mua sắm trực tuyến tốt nhất cho bạn. Khám phá ưu đãi hấp dẫn và sự hỗ trợ chăm sóc khách hàng tận tâm ngay hôm nay!</p>
 
 						<div class="row my-5">
 							<div class="col-6 col-md-6">
@@ -46,7 +46,7 @@
 										<img src="../assets/images/truck.svg" alt="Image" class="imf-fluid">
 									</div>
 									<h3>Nhanh &amp; Free Shipping</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<p>Chúng tôi tự hào cung cấp dịch vụ vận chuyển nhanh chóng và hoàn toàn miễn phí để đảm bảo bạn nhận được đơn hàng của mình một cách thuận tiện và tiết kiệm chi phí. Sự thoải mái và tiện lợi là ưu tiên hàng đầu của chúng tôi để đáp ứng nhu cầu của khách hàng.</p>
 								</div>
 							</div>
 
@@ -56,7 +56,7 @@
 										<img src="../assets/images/bag.svg" alt="Image" class="imf-fluid">
 									</div>
 									<h3>Dễ dàng mua sắm</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<p>Tại đây, chúng tôi tạo ra trải nghiệm mua sắm dễ dàng nhất cho bạn. Với giao diện thân thiện, tìm kiếm thuận tiện và quy trình thanh toán đơn giản, việc tìm kiếm và mua sắm những sản phẩm bạn mong muốn chưa bao giờ trở nên dễ dàng hơn. Hãy khám phá và trải nghiệm sự tiện lợi ngay từ lúc này!</p>
 								</div>
 							</div>
 
@@ -66,7 +66,7 @@
 										<img src="../assets/images/support.svg" alt="Image" class="imf-fluid">
 									</div>
 									<h3>Hỗ trợ 24/7</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<p>Chúng tôi cam kết đồng hành cùng bạn mọi lúc, mọi nơi. Dịch vụ hỗ trợ của chúng tôi hoạt động 24/7 để đảm bảo rằng mọi thắc mắc của bạn đều được giải đáp kịp thời. Bạn có thể yên tâm mua sắm và tận hưởng dịch vụ chăm sóc khách hàng chuyên nghiệp của chúng tôi mọi lúc bạn cần.</p>
 								</div>
 							</div>
 
@@ -76,7 +76,7 @@
 										<img src="../assets/images/return.svg" alt="Image" class="imf-fluid">
 									</div>
 									<h3>Hoàn trả miễn phí khi sai sót</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<p>Chúng tôi cam kết mang lại sự hài lòng tuyệt đối. Nếu có bất kỳ sai sót nào trong đơn hàng của bạn, chúng tôi sẽ tự do thực hiện quy trình đổi/trả hàng một cách nhanh chóng và hoàn toàn miễn phí. Chất lượng và sự hài lòng của bạn là ưu tiên hàng đầu của chúng tôi.</p>
 								</div>
 							</div>
 

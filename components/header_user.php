@@ -43,7 +43,8 @@
 
             <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
                 <li><a class="nav-link">Welcome, <?php echo $_SESSION['TenDangNhap'] ?></a></li>
-                <li><a class="nav-link" href="auth/logout.php">Logout</a></li>
+                <li><a class="nav-link" href="../auth/logout.php">Logout</a></li>
+                </ul>
         </div>
     </div>
         
