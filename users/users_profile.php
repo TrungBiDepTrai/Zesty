@@ -68,40 +68,48 @@
 					</div>
 
 					<div class="col-lg-5">
-						<form action="" method="post">
-							<h2 class="section-title">Lịch sử mua hàng</h2>
-							<table class="table">
-									<thead>
-										<tr>
-											<th scope="col">Đơn hàng</th>
-											<th scope="col">Ngày đặt</th>
-											<th scope="col">Trạng thái</th>
-											<th scope="col">Tổng</th>
-											<th scope="col">Đánh giá</th>
-										</tr>
-									</thead>
-									<tbody>
-										<?php
-											$sqlDH = "SELECT * FROM donhang WHERE MaThanhVien = $MaThanhVien";
-											$resultDH = $conn->query($sqlDH) or die("Can't get recordset");
-											if ($resultDH->num_rows > 0) {
-												while ($row = $resultDH->fetch_assoc()) {
-													?>
-													<tr>
-														<th><?=$row["MaDonHang"]?></th>
-														<th><?=$row["ThoiGianDatHang"]?></th>
-														<th><?=$row["TrangThai"]?></th>
-														<th></th>
-														<th><a href="">Đánh giá</a></th>
-													</tr>
-													<?php
-												}
-											}
-										?>
-									</tbody>
-							</table>
-						</form>
-					</div>
+   		 <form action="" method="post">
+        <h2 class="section-title">Lịch sử mua hàng</h2>
+        <table class="table">
+            <thead>
+                <tr>	
+                    <th scope="col">Đơn hàng</th>
+                    <th scope="col">Ngày đặt</th>
+                    <th scope="col">Trạng thái</th>
+                    <th scope="col">Tổng giá</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $sqlDH = "SELECT donhang.MaDonHang, donhang.ThoiGianDatHang, donhang.TrangThai, 
+				SUM(sanpham.Gia * giohang.SoLuong) AS TongGia
+				FROM donhang
+				LEFT JOIN giohang ON donhang.MaGioHang = giohang.MaGioHang
+				LEFT JOIN sanpham ON giohang.MaSanPham = sanpham.MaSanPham
+				WHERE donhang.MaThanhVien = $MaThanhVien
+				GROUP BY donhang.MaDonHang";
+
+
+                $resultDH = $conn->query($sqlDH) or die("Can't get recordset");
+                if ($resultDH->num_rows > 0) {
+                    while ($row = $resultDH->fetch_assoc()) {
+                        ?>
+                        <tr>
+                            <th><?= $row["MaDonHang"] ?></th>
+                            <th><?= $row["ThoiGianDatHang"] ?></th>
+                            <th><?= $row["TrangThai"] ?></th>
+                            <th><?= number_format($row["TongGia"], 0, ',', '.') ?> VND</th>
+                        </tr>
+                        <?php
+                    }
+                }
+                ?>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+
 
 				</div>
 			</div>
