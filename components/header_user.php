@@ -31,9 +31,9 @@
                     <a class="nav-link" href="users_home.php">Trang chủ</a>
                 </li>
                 <li><a class="nav-link" href="users_shop.php">Nguyên liệu</a></li>
-                <li><a class="nav-link" href="users_">Danh mục</a></li>
+                <li><a class="nav-link" href="users_about_us.php">Khám phá</a></li>
                 <li><a class="nav-link" href="users_blog.php">Blog</a></li>
-                <li><a class="nav-link" href="assets/contact.html">Khám phá</a></li>
+                <li><a class="nav-link" href="users_comment.php">Đánh giá</a></li>
             </ul>
 
             <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">

@@ -91,7 +91,7 @@
 												<strong class="product-price"><?php echo $row["Gia"]?></strong>
 
 												<span class="icon-cross">
-                                                <a href="users_shop.php?action=remove_from_cart&MaGioHang=<?php echo $row['MaGioHang']; ?>&MaThanhVien=<?php echo $row['MaThanhVien']; ?>&MaSanPham=<?php echo $row['MaSanPham']; ?>">
+                                                <a href="users_shop.php?action=remove_from_cart&MaGioHang=<?php echo $row['MaGioHang']; ?>&MaThanhVien=<?php echo $_SESSION['MaThanhVien']; ?>&MaSanPham=<?php echo $row['MaSanPham']; ?>">
                                                     <img src="../assets/images/cross.svg" class="img-fluid">
                                                 </a>
                                             </span>

@@ -5,10 +5,12 @@
 		include_once('../components/connection.php');
 		include_once('../components/assets.php');
 		include_once('../components/header_user.php');
-		$mathanhvien = $_GET['id'];
         $sql = "SELECT * FROM thanhvien WHERE MaThanhVien = $MaThanhVien";
         $result = $conn->query($sql) or die("Can't get recordset");
 		$row = $result->fetch_assoc();
+		if(!isset($_SESSION["error_message"])){
+			$_SESSION["error_message"] = "";
+		}
 	?>
 	<title>Nguyên liệu</title>
 </head>
@@ -34,32 +36,33 @@
 				<div class="row justify-content-between">
 					<div class="col-lg-6">
 						<h2 class="section-title">Thông tin</h2>
+						<h4 class="section-title"><?php echo $_SESSION["error_message"];?></h4>
                         <form action="" method="post">
 							<div class="row">
 							<div class="col">
 								<label for="">Họ tên</label>
-								<input type="text" class="form-control" placeholder="<?=$row['HoTen']?>" aria-label="First name">
+								<input type="text" class="form-control" value="<?=$row['HoTen']?>" aria-label="First name" disabled>
 							</div>
 							<div class="col">
 								<label for="">SĐT</label>
-								<input type="text" class="form-control" placeholder="<?=$row['SDT']?>" aria-label="Last name">
+								<input type="text" class="form-control" value="<?=$row['SDT']?>" aria-label="Last name" disabled>
 							</div>
 							</div>
 							<div class="mb-3">
 								<label for="formGroupExampleInput" class="form-label">Email</label>
-								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="<?=$row['Email']?>">
+								<input type="text" class="form-control" id="formGroupExampleInput" value="<?=$row['Email']?>" disabled>
 							</div>
 							<div class="mb-3">
-								<label for="formGroupExampleInput" class="form-label">Email</label>
-								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="<?=$row['DiaChiNhanHang']?>">
+								<label for="formGroupExampleInput" class="form-label">Địa chỉ</label>
+								<input type="text" class="form-control" id="formGroupExampleInput" value="<?=$row['DiaChiNhanHang']?>" disabled>
 							</div>
 							<div class="mb-3">
 								<label for="formGroupExampleInput" class="form-label">Ngày sinh</label>
-								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="<?=$row['DiaChiNhanHang']?>">
+								<input type="date" class="form-control" id="formGroupExampleInput" value="<?=$row['NgaySinh']?>" disabled>
 							</div>
 							<div class="mb-3">
-								<button type="submit" class="btn btn-outline-success">Thay đổi</button>
-								<button type="button" class="btn btn-outline-danger">Đổi mật khẩu</button>
+								<span><a href="users_profile_edit.php?id=<?php echo $_SESSION["MaThanhVien"]?>" class="btn">Thay đổi</a></span>
+								<span><a href="users_edit_password.php?id=<?php echo $_SESSION["MaThanhVien"]?>" class="btn">Đổi mật khẩu</a></span>
 							</div>
                         </form>
 					</div>
@@ -79,7 +82,21 @@
 									</thead>
 									<tbody>
 										<?php
-
+											$sqlDH = "SELECT * FROM donhang WHERE MaThanhVien = $MaThanhVien";
+											$resultDH = $conn->query($sqlDH) or die("Can't get recordset");
+											if ($resultDH->num_rows > 0) {
+												while ($row = $resultDH->fetch_assoc()) {
+													?>
+													<tr>
+														<th><?=$row["MaDonHang"]?></th>
+														<th><?=$row["ThoiGianDatHang"]?></th>
+														<th><?=$row["TrangThai"]?></th>
+														<th></th>
+														<th><a href="">Đánh giá</a></th>
+													</tr>
+													<?php
+												}
+											}
 										?>
 									</tbody>
 							</table>
@@ -94,7 +111,10 @@
     </div>
 
 
-		<?php include_once("../components/tail_user.php")?>
+		<?php
+		include_once("../components/tail_user.php");
+		unset($_SESSION["error_message"]);
+		?>
 	</body>
 
 </html>
