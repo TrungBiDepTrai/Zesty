@@ -10,7 +10,7 @@
             $query = "SELECT * FROM admin WHERE TenDangNhap = '$Tendangnhap' AND MatKhau = '$Matkhau'";
             $result = mysqli_query($conn, $query);
 
-            if (mysqli_num_rows($result) == 1) {a
+            if (mysqli_num_rows($result) == 1) {
                 $_SESSION['TenDangNhap'] = $Tendangnhap;
                 $_SESSION['user_type'] = 'admin';
                 header("Location: ../admin/admin_user_list.php");
