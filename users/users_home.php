@@ -200,7 +200,7 @@
 							</div>
 
 						</div>
-						<p><a herf="#" class="btn">Mua ngay</a></p>
+
 					</div>
 
 					<div class="col-lg-5">
@@ -245,7 +245,7 @@
 							<li>Khám phá những hương vị mới</li>
 							<li>Thuận tiện cho việc tìm nguyên liệu</li>
 						</ul>
-						<p><a herf="#" class="btn">Đi thôi</a></p>
+
 					</div>
 				</div>
 			</div>
