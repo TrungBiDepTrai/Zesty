@@ -254,55 +254,46 @@
 		<!-- Start Blog Section -->
 		<div class="blog-section">
 			<div class="container">
-				<div class="row mb-5">
-					<div class="col-md-6">
+			<div class="col-md-6">
 						<h2 class="section-title">Blog gần đây</h2>
 					</div>
-					<div class="col-md-6 text-start text-md-end">
-						<a href="#" class="more">Xem tất cả</a>
-					</div>
-				</div>
-
 				<div class="row">
-
-					<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
-						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="../assets/images/post-1.jpg" alt="Image" class="img-fluid"></a>
-							<div class="post-content-entry">
-								<h3><a href="#">First Time Home Owner Ideas</a></h3>
-								<div class="meta">
-									<span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 19, 2021</a></span>
-								</div>
-							</div>
+							<?php
+								$sql = "SELECT blog.*, thanhvien.MaThanhVien, thanhvien.HoTen AS TenThanhVien, admin.TenDangNhap FROM blog LEFT JOIN thanhvien ON blog.MaThanhVien = thanhvien.MaThanhVien LEFT JOIN admin ON blog.MaAdmin = admin.MaAdmin";
+								$result = $conn->query($sql) or die("Can't get recordset");
+								if ($result->num_rows > 0) {
+									while ($row = $result->fetch_assoc()) {
+										?>
+										<div class="col-12 col-sm-6 col-md-4 mb-5">
+										<div class="post-entry">
+											<a href="users_blog_detail.php?blog_id=<?=$row["MaBlog"]?>" class="post-thumbnail"><img src="../images/Blog/<?=$row['AnhBlog']?>" alt="Image" class="img-fluid"></a>
+											<div class="post-content-entry">
+												<h3><a href="users_blog_detail.php?blog_id=<?=$row["MaBlog"]?>"><?=$row["Title"]?></a></h3>
+												<div class="meta">
+													<span>bởi <a href="users_blog_detail.php?blog_id=<?=$row["MaBlog"]?>"><?php
+													 	if(!empty($row["TenThanhVien"])){
+															echo $row["TenThanhVien"];
+														} elseif (!empty($row["TenDangNhap"])) {
+															echo $row["TenDangNhap"];
+														} else {
+															echo "Ẩn danh";
+														}
+													?></a></span> <span>vào <a href="users_blog_detail.php?blog_id=<?=$row["MaBlog"]?>"><?=$row["NgayDang"]?></a></span>
+												</div>
+											</div>
+										</div>
+										</div>
+									<?php
+									}
+								} else {
+									echo "<tr><td colspan=7>Tap ket qua rong</td></tr>";
+								}
+							?>
 						</div>
 					</div>
-
-					<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
-						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="../assets/images/post-2.jpg" alt="Image" class="img-fluid"></a>
-							<div class="post-content-entry">
-								<h3><a href="#">How To Keep Your Furniture Clean</a></h3>
-								<div class="meta">
-									<span>by <a href="#">Robert Fox</a></span> <span>on <a href="#">Dec 15, 2021</a></span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
-						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="../assets/images/post-3.jpg" alt="Image" class="img-fluid"></a>
-							<div class="post-content-entry">
-								<h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
-								<div class="meta">
-									<span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 12, 2021</a></span>
-								</div>
-							</div>
-						</div>
-					</div>
-
 				</div>
 			</div>
+			
 		</div>
 		<!-- End Blog Section -->	
 
