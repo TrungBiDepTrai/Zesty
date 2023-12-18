@@ -65,29 +65,38 @@
             background: #0056b3; /* Màu nền khi hover */
         }
 
-        .page_item {
-            margin-right: 10px;
-        }
-
-        .page_item:hover {
-            text-decoration: none;
-        }
-
-        strong {
-            margin-right: 10px;
-        }
-
-        strong:hover {
-            text-decoration: none;
-        }
-
-        .category {
-            margin-bottom: 20px;
-        }
-
-        .li {
-            text-decoration: none;
-        }
+        .page_item{
+        margin: 0 5px;
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #495057;
+    text-decoration: none;
+    }
+    .pagination {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.page_item.active {
+    background-color: #163020;
+    color: #fff;
+}
+    .page_item:hover{
+        background-color: #e9ecef;
+    }
+    strong{
+        margin-right: 10px;
+    }
+    strong:hover{
+        text-decoration: none;
+    }
+    .category{
+        margin-bottom: 20px;
+    }
+    .li{
+        text-decoration: none;
+    }
 
         .search-form {
             margin-top: 20px;
@@ -150,7 +159,7 @@
                         ?>
                     </ul>
                 </div>
-
+                
                 <?php
                 if (isset($_GET['category'])) {
                     $categoryID = $_GET['category'];

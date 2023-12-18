@@ -97,7 +97,23 @@
                         <tr>
                             <th><?= $row["MaDonHang"] ?></th>
                             <th><?= $row["ThoiGianDatHang"] ?></th>
-                            <th><?= $row["TrangThai"] ?></th>
+							<th>
+								<?php
+									$trangThai = $row["TrangThai"];
+									if ($trangThai == 0) {
+										echo "Chờ lấy hàng";
+									} elseif ($trangThai == 1) {
+										echo "Đang giao";
+									} elseif ($trangThai == 2) {
+										echo "Đã nhận hàng";
+									} elseif ($trangThai == 3) {
+										echo "Hủy đơn hàng";
+									} else {
+										echo "Trạng thái không xác định";
+									}
+								?>
+							</th>
+
                             <th><?= number_format($row["TongGia"], 0, ',', '.') ?> VND</th>
                         </tr>
                         <?php
