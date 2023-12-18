@@ -20,7 +20,7 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="assets/index.html">Trang chủ</a>
                 </li>
-                <li><a class="nav-link" href="users/users_shop.php">Nguyên liệu</a></li>
+                <li><a class="nav-link" href="assets/shop.php">Nguyên liệu</a></li>
                 <li><a class="nav-link" href="assets/about_us.php">Danh mục</a></li>
                 <li><a class="nav-link" href="assets/blog.html">Blog</a></li>
                 <li><a class="nav-link" href="assets/contact.html">Khám phá</a></li>
