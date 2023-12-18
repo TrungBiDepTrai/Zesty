@@ -86,15 +86,14 @@
 							while($row = $result->fetch_assoc()){
 								?>
 									<div class="col-12 col-md-4 col-lg-3 mb-5">
-											<a class="product-item" href="assets/cart.html">
-												<img src="../images/Product/<?php echo $row["Anh"]?>" class="img-fluid product-thumbnail">
-												<h3 class="product-title"><?php echo $row["TenSanPham"] ?></h3>
-												<strong class="product-price"><?php echo $row["Gia"]?></strong>
-
-												<span class="icon-cross">
-
-                                            </span>
-											</a>
+									<a class="product-item" href="add_to_cart.php?product_id=<?=$row["MaSanPham"]; ?>">
+														<img src="../images/Product/<?php echo $row["Anh"] ?>" class="img-fluid product-thumbnail">
+														<h3 class="product-title"><?php echo $row["TenSanPham"] ?></h3>
+														<strong class="product-price"><?php echo number_format($row["Gia"]) ?>VNĐ</strong>
+														<span class="icon-cross">
+															<img src="../assets/images/cross.svg" class="img-fluid">
+														</span>
+													</a>
 									</div>
 								<?php
 							}
@@ -123,14 +122,14 @@
 									while($row = $result1->fetch_assoc()){
 										?>
 											<div class="col-12 col-md-4 col-lg-3 mb-5">
-											<a class="product-item" href="add_to_cart.php?product_id=<?=$row["MaSanPham"]; ?>">
-                                <img src="../images/Product/<?php echo $row["Anh"] ?>" class="img-fluid product-thumbnail">
-                                <h3 class="product-title"><?php echo $row["TenSanPham"] ?></h3>
-                                <strong class="product-price"><?php echo number_format($row["Gia"]) ?>VNĐ</strong>
-                                <span class="icon-cross">
-                                    <img src="../assets/images/cross.svg" class="img-fluid">
-                                </span>
-                            </a>
+												<a class="product-item" href="add_to_cart.php?product_id=<?=$row["MaSanPham"]; ?>">
+														<img src="../images/Product/<?php echo $row["Anh"] ?>" class="img-fluid product-thumbnail">
+														<h3 class="product-title"><?php echo $row["TenSanPham"] ?></h3>
+														<strong class="product-price"><?php echo number_format($row["Gia"]) ?>VNĐ</strong>
+														<span class="icon-cross">
+															<img src="../assets/images/cross.svg" class="img-fluid">
+														</span>
+													</a>
 											</div>
 										<?php
 									}
