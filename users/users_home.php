@@ -111,13 +111,7 @@
 					<div class="col-md-6">
 						<h2 class="section-title">Nguyên liệu</h2>
 					</div>
-					<div class="col-md-6 text-md-end">
-						<a href="#">Tất cả</a>
-						<a href="#">Nguyên liệu</a>
-						<a href="#">Hoa quả và rau củ</a>
-						<a href="#">Đồ từ sữa</a>
-						<a href="#">Gia vị</a>
-					</div>
+
 				</div>
 				<div class="untree_co-section product-section before-footer-section">
 					<div class="row">

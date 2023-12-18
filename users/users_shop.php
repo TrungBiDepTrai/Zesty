@@ -36,6 +36,35 @@
     ?>
     <title>Nguyên liệu</title>
     <style>
+        /* Trong file CSS hoặc thẻ <style> trong file HTML */
+        .search-container {
+            float: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .search-container input[type=text] {
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            width: 300px;
+            border: none;
+        }
+
+        .search-container button {
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            background: #007bff; /* Màu nền của nút tìm kiếm */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background: #0056b3; /* Màu nền khi hover */
+        }
+
         .page_item {
             margin-right: 10px;
         }
@@ -92,10 +121,14 @@
     </div>
 
     <div class="untree_co-section product-section before-footer-section">
-	<form class="search-form" action="search.php" method="GET">
-                    <input class="search-input" type="text" name="query" placeholder="Tìm kiếm sản phẩm...">
-                    <button class="search-button" type="submit">Tìm kiếm</button>
-                </form>
+	<!-- Trong header_user.php -->
+<div class="search-container">
+    <form action="search.php" method="get">
+        <input type="text" placeholder="Tìm kiếm sản phẩm..." name="query">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>
+
         <div class="container">
             <div class="row">
                 <div class="category">
