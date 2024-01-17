@@ -18,7 +18,7 @@
             $MaDanhMuc = $_POST['madanhmuc'];
             
             $file = $_FILES['filename'];
-            $size_allow = 10; //Cho phép 10MB
+            $size_allow = 10; //Cho phép 10MB // 
 
 
             //Đổi tên trước khi upload 

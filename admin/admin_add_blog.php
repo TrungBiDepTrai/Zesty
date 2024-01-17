@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <title>
@@ -15,7 +15,7 @@
 
         $file = $_FILES['filename'];
             $size_allow = 10; //Cho phép 10MB
-
+            // 
 
             //Đổi tên trước khi upload 
             $filename = $file['name'];

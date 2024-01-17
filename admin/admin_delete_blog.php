@@ -13,7 +13,7 @@
         if (isset($_GET['id'])) {
             $id = $_GET['id'];
 
-            // Kiểm tra xem người dùng có tồn tại không
+            // Kiểm tra xem người dùng có tồn tại không // 
             $check_query = "SELECT * FROM blog WHERE MaBlog = '$id'";
             $check_result = mysqli_query($conn, $check_query);
 

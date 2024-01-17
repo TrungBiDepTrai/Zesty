@@ -17,7 +17,7 @@
             $sdt = $_POST['sdt'];
             $diachi = $_POST['diachi'];
 
-            // Thực hiện truy vấn để cập nhật thông tin thành viên
+            // Thực hiện truy vấn để cập nhật thông tin thành viên // 
             $query = "UPDATE thanhvien SET TenDangNhap = '$tendangnhap', MatKhau = '$matkhau', HoTen = '$hoten', Email = '$email', SDT = '$sdt', DiaChiNhanHang = '$diachi' WHERE MaThanhVien = '$id'";
             $result = mysqli_query($conn, $query);
 

@@ -17,7 +17,7 @@
         $diachi = $_POST['diachi'];
     
         $errors = array();
-    
+     // 
         // Kiểm tra mỗi trường nếu trống và thêm thông báo lỗi vào mảng errors
         if (empty($tendangnhap)) {
             $errors['tendangnhap'] = 'Tên đăng nhập không được để trống.';

@@ -12,7 +12,7 @@
         $TenDanhMuc = $_POST['tendanhmuc'];
         $MoTa = $_POST['mota'];
 
-        // Thực hiện truy vấn để thêm mới thành viên
+        // Thực hiện truy vấn để thêm mới thành viên  // 
         $query = "INSERT INTO danhmuc (TenDanhMuc, MoTa) VALUES ('$TenDanhMuc', '$MoTa')";
         $result = mysqli_query($conn, $query);
 

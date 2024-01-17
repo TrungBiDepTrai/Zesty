@@ -7,7 +7,7 @@
   <?php
     include_once('../components/assets_admin.php');
     include_once('../components/connection.php');
-    // Kiểm tra xem có thông điệp từ trang admin_delete_user.php không
+    // Kiểm tra xem có thông điệp từ trang admin_delete_user.php không // 
     if (isset($_GET['message'])) {
         $message = $_GET['message'];
         $result = isset($_GET['result']) ? $_GET['result'] : 'danger';

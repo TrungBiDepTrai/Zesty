@@ -13,7 +13,7 @@
             $Tendanhmuc = $_POST['tendanhmuc'];
             $Mota = $_POST['mota'];
 
-            // Thực hiện truy vấn để cập nhật thông tin thành viên
+            // Thực hiện truy vấn để cập nhật thông tin thành viên // 
             $query = "UPDATE danhmuc SET TenDanhMuc = '$Tendanhmuc', MoTa = '$Mota' WHERE MaDanhMuc = '$id'";
             $result = mysqli_query($conn, $query);
 

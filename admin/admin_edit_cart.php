@@ -16,7 +16,7 @@
             $query = "UPDATE donhang SET TrangThai = '$Trangthai' WHERE MaDonHang = '$id'";
             $result = mysqli_query($conn, $query);
     
-            // Kiểm tra và hiển thị thông báo tương ứng
+            // Kiểm tra và hiển thị thông báo tương ứng // 
             if ($result) {
                 $message = "Cập nhật trạng thái đơn hàng thành công!";
             } else {

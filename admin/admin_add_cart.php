@@ -17,6 +17,7 @@
         $diachi = $_POST['diachi'];
 
         // Thực hiện truy vấn để thêm mới thành viên
+         // 
         $query = "INSERT INTO thanhvien (TenDangNhap, MatKhau, HoTen, Email, SDT, DiaChiNhanHang) VALUES ('$tendangnhap', '$matkhau', '$hoten', '$email', '$sdt', '$diachi')";
         $result = mysqli_query($conn, $query);
 
